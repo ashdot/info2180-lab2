@@ -1,0 +1,150 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+
+
+
+
+/*GRID LAYOUT ( FIX THIS ) */
+
+.container{
+    display:grid;
+    /*
+    grid-template-columns:  500px 600px 300px;
+    grid-template-rows: 300px 500px 50px;
+    */
+    grid-template-columns: 4fr 4fr 2fr;
+    grid-template-rows: 7fr 18fr 1fr;
+    gap: 20px;
+}
+
+header{
+    display:flex;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    grid-column: span 3;
+    grid-row:1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+main{
+    grid-column:span 2;
+    grid-row:2;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+aside{
+    grid-column:3;
+    grid-row:2;
+}
+
+footer{
+    background-color: #2C5282;
+    color:#FFFFFF;
+    grid-row:3;
+    grid-column: span 3;
+    
+}
+
+
+/*ELEMENT STYLES*/
+
+h1{
+    font-size:36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+h2{
+    font-size:32px;
+    color:#48BB78;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+#image1 {
+    border-radius: 50%;
+    padding-top: 25px;
+} 
+
+/*.articles {
+    display: flex;
+}*/
+
+
+
+.image2 {
+    float:right;
+}
+
+
+#About {
+    color: #000000;
+}
+
+#Aboutbox {
+    background-color: #E2E8F0;
+    padding: 7%;
+}
+
+
+#Social {
+    color:#48BB78;
+}
+
+#Archives {
+    color:#48BB78;
+}
+
+
+.MEDIA ul {
+    color: #4299E1;
+}
+
+.ARCHIVE ul {
+    color:#4299E1;
+}
+
+
+
+
+#date {
+    color:#718096;
+}
+
+header > p {
+    color:#FFFFFF;
+    padding-bottom: 50px;
+}
+
+footer > p {
+    color:#FFFFFF;
+    padding-left: 200px;
+    
+}
+
+
+ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+} 
+
+p{
+    font-size: 18px;
+    color:#2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", 
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+}
